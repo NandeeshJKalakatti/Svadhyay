@@ -4,7 +4,7 @@ import React from 'react'
 const homepage = () => {
   return (
     <View>
-      <Text>homepage</Text>
+      <Text>Homepage</Text>
     </View>
   )
 }

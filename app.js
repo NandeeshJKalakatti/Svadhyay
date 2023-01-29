@@ -14,8 +14,9 @@ signupForm.addEventListener("submit", e => {
   const passwordConfirm = document.querySelector("#password-confirm").value;
   if (password === passwordConfirm) {
     console.log(`Creating account with name: ${name}, email: ${email}, and password: ${password}`);
-  } else {
+  } else {}
     console.log("Passwords do not match");
+    ,jbkjb
   }
 });
 

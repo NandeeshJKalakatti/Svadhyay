@@ -2,9 +2,18 @@ import React, { Component } from 'react';
 import { View, Text ,ImageBackground,TouchableOpacity} from 'react-native';
 //rnfe
 import { LinearGradient } from 'expo-linear-gradient';
-class HomePage extends Component {
-  render() {
+// import { useNavigation } from '@react-navigation/native';
+// const navigation = useNavigation();
+
+//   const handleButtonPress = () => {
+//     navigation.navigate('Scheme.js');
+//   };
+
+  
+
+const HomePage = ({navigation}) => {
     return (
+      
       <View style={styles.container}>
          <LinearGradient
         colors={['#4200FF','#343CFC']}
@@ -30,21 +39,29 @@ class HomePage extends Component {
       </LinearGradient>
      
 
-      <TouchableOpacity onPress={Text}>
-      <View style={{ height: 20 }} />
+      <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}  >
+     
                 <Text style={styles.but}>Notes
                 </Text>
-                <View style={{ height: 20 }} />
+                
+                </TouchableOpacity> 
+                <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}>
+               
                 <Text style={styles.but}>Roadmaps
                 </Text>
+                </TouchableOpacity> 
+                <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}>
                 <View style={{ height: 20 }} />
-                <Text style={styles.but}>Qution paper
+                <Text style={styles.but}>Question paper
                 </Text>
+                <View style={{ height: 20 }} />
+                
+                
             </TouchableOpacity> 
       </View>
       
     );
-  }
+  
 }
 const myColor = '#343CFC';
 const styles = {
@@ -52,6 +69,12 @@ const styles = {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  touch:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    top:-110
   },
   rectangleBox: {
     width: 420,
@@ -97,7 +120,7 @@ const styles = {
     
   },
   but:{
-    top:-150,
+    // top:-80,
     fontSize:16,
     width:320,
     height: 50,
@@ -113,6 +136,7 @@ const styles = {
       borderRadius:50,
       padding:12,
        elevation :10, 
+      
        
        
 

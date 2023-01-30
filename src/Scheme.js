@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View,ImageBackground,TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 
-const branc = () => {
+const Scheme = ({navigation}) => {
   return (
     <ScrollView>
     <View>
@@ -17,22 +17,21 @@ const branc = () => {
                 <Text style={styles.but}>2018 Scheme
                 </Text>
                
-            </TouchableOpacity>
-            
-      <TouchableOpacity onPress={Text}>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={Text}>
       <View style={{ height:30 }} />
                 <Text style={styles.but}>2020 Scheme
                 </Text>
-               
-            </TouchableOpacity>
+                </TouchableOpacity>
+           
             
-      <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={Text}>
       <View style={{ height:30 }} />
                 <Text style={styles.but}>2022 Scheme
                 </Text>
                 <View style={{ height:100 }} />
-               
-            </TouchableOpacity>
+                </TouchableOpacity>
+            
             
             
       </View>
@@ -41,7 +40,7 @@ const branc = () => {
   )
 }
 
-export default branc
+export default Scheme
 
 const styles = {
   container: {
@@ -60,7 +59,7 @@ const styles = {
     // ,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 9
+    elevation: 15
   },
   txt :{
     justifyContent: 'center',
@@ -81,7 +80,7 @@ const styles = {
   but:{
     justifyContent:'center',
     right:12,
-    top:50,
+    top:10,
     fontSize:16,
     width:320,
     height: 50,

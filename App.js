@@ -1,16 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Homepage from './src/homepage';
-import Branch from './src/Branch';
-import Year from './src/Year'
-import Branc from './src/Scheme';
+// import Homepage from './src/homepage';
+// import Branch from './src/Branch';
+// import Year from './src/Year'
+// import Scheme from './src/Scheme';
+import Rootnavigation from './src/Rootnavigation';
 export default function App() {
   return (
-     <Homepage/>
-    //  <Branch/>
+    //  <Homepage/>
+      //  <Branch/>
     // <Year/>
     // <Branc/>
-    
+    <Rootnavigation/>
   );
 }
 

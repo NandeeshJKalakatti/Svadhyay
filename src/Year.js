@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
 import React from 'react'
 
-const Year = () => {
+const Year = ({navigation}) => {
   return (
      <ScrollView>
     <View>
@@ -15,48 +15,48 @@ const Year = () => {
 
       <ScrollView>
         <View>
-                 <TouchableOpacity onPress={Text}>
+                 <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
       <         View style={{ height: 9 }} />
       
                 <Text style={styles.but}>Sem 1
                 </Text>
                 </TouchableOpacity> 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 2
                 </Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 3
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 4
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 5
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 6
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 7
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 8
                 </Text>

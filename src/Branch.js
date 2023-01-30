@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View,ImageBackground,TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const branch = () => {
+const Branch = ({navigation}) => {
   return (
     <View>
        <ImageBackground
@@ -11,21 +11,35 @@ const branch = () => {
        <Text style={styles.txt}>Branch</Text>
       </ImageBackground>
       
-      <TouchableOpacity onPress={Text}>
+      <TouchableOpacity onPress={()=> navigation.navigate('Year')}>
       <View style={{ height: 9 }} />
                 <Text style={styles.but}>Computer Science
                 </Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={()=> navigation.navigate('Year')}>
                 <View style={{ height: 9}} />
                 <Text style={styles.but}>Civil
                 </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={()=> navigation.navigate('Year')}>
                 <View style={{ height:9 }} />
                 <Text style={styles.but}>Mechanical
                 </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={()=> navigation.navigate('Year')}>
                 <Text style={styles.but}>E&C
                 </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={()=> navigation.navigate('Year')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>CSD                
-                </Text>      
+                </Text>    
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={()=> navigation.navigate('Year')}>  
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>EEE
                 </Text>
@@ -36,7 +50,7 @@ const branch = () => {
   )
 }
 
-export default branch
+export default Branch
 
 const styles = {
   container: {

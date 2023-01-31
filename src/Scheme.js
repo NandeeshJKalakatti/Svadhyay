@@ -12,20 +12,20 @@ const Scheme = ({navigation}) => {
        <Text style={styles.txt}>Scheme</Text>
       </ImageBackground>
       
-      <TouchableOpacity onPress={Text}>
+      <TouchableOpacity onPress={()=> navigation.navigate('Home')}>
       <View style={{ height:30 }} />
                 <Text style={styles.but}>2018 Scheme
                 </Text>
                
                 </TouchableOpacity>
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Home')}>
       <View style={{ height:30 }} />
                 <Text style={styles.but}>2020 Scheme
                 </Text>
                 </TouchableOpacity>
            
             
-                <TouchableOpacity onPress={Text}>
+                <TouchableOpacity onPress={()=> navigation.navigate('Home')}>
       <View style={{ height:30 }} />
                 <Text style={styles.but}>2022 Scheme
                 </Text>

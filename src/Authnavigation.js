@@ -9,23 +9,24 @@ const Stack = createNativeStackNavigator();
 const Authnavigation = () => {
   return (
     <Stack.Navigator initialRouteName='Homepage'>
-    <Stack.Screen name="Home" component={HomePage} 
-    options={{
-      headerShown:false,
-    }}/>
-    <Stack.Screen name="Scheme" component={Scheme}
-     options={{
-      headerShown:false,
-    }} />
-    <Stack.Screen name="Br" component={Branch}
-     options={{
-      headerShown:false,
-    }} />
-    <Stack.Screen name="Year" component={Year}
-     options={{
-      headerShown:false,
-    }} />
-  </Stack.Navigator>
+      <Stack.Screen name="Home" component={HomePage}
+        options={{
+          headerShown: false,
+        }} />
+      <Stack.Screen name="Scheme" component={Scheme}
+        options={{
+          headerShown: false,
+        }} />
+      <Stack.Screen name="Br" component={Branch}
+        options={{
+          headerShown: false,
+        }} />
+      <Stack.Screen name="Year" component={Year}
+        options={{
+          headerShown: false,
+
+        }} />
+    </Stack.Navigator>
   )
 }
 

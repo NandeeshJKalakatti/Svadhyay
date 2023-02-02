@@ -8,9 +8,9 @@ import Rootnavigation from './src/Rootnavigation';
 export default function App() {
   return (
     //  <Homepage/>
-      //  <Branch/>
-    // <Year/>
-    // <Branc/>
+    //  <Branch/>
+    //  <Year/>
+    //  <Branc/>
     <Rootnavigation/>
   );
 }

@@ -3,11 +3,11 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import Authnavigation from './Authnavigation'
 const Rootnavigation = () => {
-  return ( 
+  return (
     <NavigationContainer>
-    <Authnavigation/>
- </NavigationContainer>
-    
+      <Authnavigation />
+    </NavigationContainer>
+
   )
 }
 

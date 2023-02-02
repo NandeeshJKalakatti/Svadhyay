@@ -29,6 +29,7 @@ const HomePage = ({ navigation }) => {
 
 
 
+
         <ImageBackground
           source={require('../img/reg.png')}
           style={styles.rect}

@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-// import Homepage from './src/homepage';
+ import Homepage from './src/homepage';
 // import Branch from './src/Branch';
 // import Year from './src/Year'
 // import Scheme from './src/Scheme';
+import  Branch from './SUB/Civil/5Sem'
 import Rootnavigation from './src/Rootnavigation';
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
     //  <Branch/>
     //  <Year/>
     //  <Branc/>
+    // <Branch/>
     <Rootnavigation/>
   );
 }

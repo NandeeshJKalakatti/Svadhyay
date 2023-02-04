@@ -14,44 +14,52 @@ import { LinearGradient } from 'expo-linear-gradient';
 const HomePage = ({navigation}) => {
     return (
       
-      <View style={styles.container}>
-         <LinearGradient
-        colors={['#4200FF','#343CFC']}
-        start={[10, -110]}
-        end={[1, -100]}
-        style={styles.rectangleBox}
+     
+         
+        <View style={styles.container}>
         
+           <View style={styles.rectangleBox}>
+           <ImageBackground
+          source={require('../img/Logo3.png')}
+          style={styles.Log}
+        >
+          
+        </ImageBackground>
+           
+        <ImageBackground
+          source={require('../img/reg.png')}
+          style={styles.rect}
+        >
+          
+        </ImageBackground>
         
-      >
-        <View>
-        
-        </View>
+           </View >
          
        
          
-         <ImageBackground
-        source={require('../img/reg.png')}
-        style={styles.rect}
-      >
-        <Text style={styles.txt}>Svadhyay</Text>
-      </ImageBackground>
+        
        
-      </LinearGradient>
+      
+        
+     
+       
+     
      
 
       <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}  >
      
                 <Text style={styles.but}>Notes
                 </Text>
-                
+                <View style={{ height: 20 }} />
                 </TouchableOpacity> 
                 <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}>
                
                 <Text style={styles.but}>Roadmaps
                 </Text>
+                <View style={{ height: 20 }} />
                 </TouchableOpacity> 
                 <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}>
-                <View style={{ height: 20 }} />
+                
                 <Text style={styles.but}>Question paper
                 </Text>
                 <View style={{ height: 20 }} />
@@ -63,30 +71,42 @@ const HomePage = ({navigation}) => {
     );
   
 }
-const myColor = '#343CFC';
+const ElevatedView = ({ children, style }) => (
+  <View style={[{ elevation:100, shadowColor: 'white' }, style]}>
+    {children}
+  </View>
+);
+const myColor = '';
 const styles = {
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor:'#fff'
+    
   },
   touch:{
-    flex: 1,
+    flex:0,
     alignItems: 'center',
     justifyContent: 'center',
-    top:-110
+    top:-100,
   },
   rectangleBox: {
-    width: 420,
-    height: 650,
-    top:-250,
-    borderRadius: 100,
-    backgroundColor: myColor,
-    // backgroundColor: rgba(66, 0, 255, 1)
-    // ,
-    alignItems: 'center',
-    justifyContent: 'center',
-    elevation: 15
+    // width: 420,
+    // height: 650,
+   top:-250,
+    // borderRadius: 100,
+    // backgroundColor: myColor,
+    // // backgroundColor: rgba(66, 0, 255, 1)
+    // // ,
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    // elevation: 15
+    width:420,
+    height:650,
+    backgroundColor: '#fbb13c',
+    borderRadius:100,
+    elevation:20,
   },
   head1:{
     fontSize:30,
@@ -94,13 +114,13 @@ const styles = {
     fontWeight:'700',
 },
   rect : {
-    width:330 ,
+    width:342,
     height: 250,
     alignItems :'center',
-    backgroundColor:'white',
+   
     // backgroundimage:'',
-    top: 280,
-    Left:30,
+    top: 450,
+    right:-40,
     borderRadius:100,
     
   },
@@ -140,6 +160,22 @@ const styles = {
        
        
 
+  },
+  Log:{
+    
+    width:300,
+    height: 55,
+    alignItems :'center',
+    // backgroundColor:'white',
+    // backgroundimage:'',
+    top: 400,
+    right:-60,
+    borderRadius:100,
+    ElevatedView
+    
+   
+    
+   
   }
 };
 

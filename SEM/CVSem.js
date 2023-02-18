@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
+import {Text, View,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
 import React from 'react'
 
-const Year = ({navigation}) => {
+const CVsem = ({navigation}) => {
   return (
      <ScrollView>
     <View>
@@ -11,68 +11,59 @@ const Year = ({navigation}) => {
         style={styles.rect}
          >
         <View style={{ height:20 }} />
-        <Text style={styles.txt}>SEM</Text>
+        <Text style={styles.txt}>CSEM</Text>
          </ImageBackground>
       </View>
 
       <ScrollView>
         <View>
                  <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
-      <         View style={{ height: 9 }} />
-      
-              
-                
+      <View style={{ height: 9 }} />         
                 </TouchableOpacity>
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC3')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 3
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC4')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 4
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC5')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 5
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC6')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 6
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC7')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 7
                 </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=> navigation.navigate('Scheme')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('SEMC8')}>
                 <View style={{ height: 9 }} />
                 <Text style={styles.but}>Sem 8
                 </Text>
                 </TouchableOpacity>
-                
-               
                 </View>
                 <View style={{ height: 9 }} />
                 <View style={{ height: 9 }} />
                 </ScrollView>
-           
       </View>
-       </ScrollView> 
-
-    
+       </ScrollView>    
   )
 }
-
-export default Year
+export default CVsem
 
 const styles = {
   container: {

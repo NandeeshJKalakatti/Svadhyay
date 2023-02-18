@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 
-const Branch = ({ navigation }) => {
+const SEMC7 = ({ navigation }) => {
   return (
     
     <View>
       <View style={styles.rect2} >
          <ImageBackground
-        source={require('../img/br.png')}
+        source={require('../../img/br.png')}
         style={styles.rect}
          >
         <View style={{ height:20 }} />
@@ -65,7 +65,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC7
 const ElevatedView = ({ children, style }) => (
   <View style={[{ elevation: 4, shadowColor: 'white' }, style]}>
     {children}

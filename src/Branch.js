@@ -3,8 +3,9 @@ import React from 'react'
 
 const Branch = ({ navigation }) => {
   return (
-    
-    <View>
+    <ScrollView>
+    <View style={styles.container}>
+      <View style={styles.inner}>
       <View style={styles.rect2} >
          <ImageBackground
         source={require('../img/br.png')}
@@ -14,10 +15,9 @@ const Branch = ({ navigation }) => {
         <Text style={styles.txt}>Branch</Text>
          </ImageBackground>
       </View>
-      <ScrollView>
+    
        <View>
       <TouchableOpacity onPress={() => navigation.navigate('Year')}>
-        {/* <View style={{ height: 9 }} /> */}
         <Text style={styles.but}>Basic Science
         </Text>
       </TouchableOpacity>
@@ -44,13 +44,13 @@ const Branch = ({ navigation }) => {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Year')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Cv')}>
         <View style={{ height: -5 }} />
         <Text style={styles.but}>EEE
         </Text>
       </TouchableOpacity>
       
-      <TouchableOpacity onPress={() => navigation.navigate('Year')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Cv')}>
         
         <Text style={styles.but}>Civil
         </Text>
@@ -58,9 +58,10 @@ const Branch = ({ navigation }) => {
       <View style={{ height: 9 }} /> 
       <View style={{ height: 9 }} />
       </View>
-      </ScrollView>
+    
     </View>
-
+    </View>
+    </ScrollView>
 
   )
 }
@@ -74,15 +75,17 @@ const ElevatedView = ({ children, style }) => (
 
 const styles = {
   container: {
-    flex: 1,
+    // flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    
+    
   },
   rect: {
     width:270,
     height:205,
     top: -9, 
-    left:-5,
+    left:1,
     alignItems: 'center',
     justifyContent: 'center',
     elevation:1
@@ -93,7 +96,7 @@ const styles = {
     backgroundColor: 'white',
     top: -20,
     borderRadius: 100,
-    left:-15,
+    left:-2,
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 20
@@ -102,7 +105,6 @@ const styles = {
   txt: {
     justifyContent: 'center',
     letterSpacing: 1,
-
     fontWeight: "bold",
     fontSize: 25,
     color: 'black',
@@ -112,8 +114,6 @@ const styles = {
     borderRadius: 70,
     top: 150,
     padding: 8
-
-
   },
   but: {
     justifyContent: 'center',
@@ -134,8 +134,5 @@ const styles = {
     borderRadius: 50,
     padding: 12,
     elevation: 10,
-
-
-
   }
 }

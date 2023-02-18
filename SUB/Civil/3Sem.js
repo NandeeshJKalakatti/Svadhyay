@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 
-const Branch = ({ navigation }) => {
+const SEMC3 = ({ navigation }) => {
   return (
     <ScrollView>
     <View>
         
       <ImageBackground
-        source={require('../../img/reg.png')}
+        source={require('../../img/br.png')}
         style={styles.rect}
       >
         <Text style={styles.txt}>Subject</Text>
@@ -77,7 +77,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC3
 
 const styles = {
   container: {
@@ -97,6 +97,17 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 15
+  },
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
+    top: -20,
+    borderRadius: 100,
+    left:-15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 20
   },
   txt: {
     justifyContent: 'center',

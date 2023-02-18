@@ -1,18 +1,21 @@
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity ,ScrollView, Button} from 'react-native'
 import React from 'react'
-
-const Branch = ({ navigation }) => {
+import * as OpenAnything from "react-native-openanything"
+const SEMC4 = ({ navigation }) => {
   return (
     <ScrollView>
     <View>
-      <ImageBackground
-        source={require('../../img/reg.png')}
+    <View style={styles.rect2} >
+         <ImageBackground
+        source={require('../../img/br.png')}
         style={styles.rect}
-      >
+         >
+        <View style={{ height:20 }} />
         <Text style={styles.txt}>Subject</Text>
-      </ImageBackground>
+         </ImageBackground>
+      </View>
        
-      <TouchableOpacity onPress={() => navigation.navigate('Year')}>
+      <TouchableOpacity  onPress={()=> OpenAnything.Pdf('https://drive.google.com/file/d/1NScvKHUYzA8v6fnBfhw_Q-jONcqq02Il/view?usp=sharing')}>
         <View style={{ height: 9 }} />
         <Text style={styles.but}>Applied Hydraulics(18CV43)
         </Text>
@@ -58,7 +61,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC4
 
 const styles = {
   container: {
@@ -66,18 +69,25 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
   },
-  rect: {
-    width: 420,
-    height: 390,
-
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
     top: -20,
     borderRadius: 100,
-    left: 1,
-    // backgroundColor: rgba(66, 0, 255, 1)
-    // ,
+    left:-15,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 15
+    elevation: 20
+  },
+  rect: {
+    width:270,
+    height:205,
+    top: -9, 
+    left:-5,
+    alignItems: 'center',
+    justifyContent: 'center',
+
   },
   txt: {
     justifyContent: 'center',

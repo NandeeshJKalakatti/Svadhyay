@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Branch = ({ navigation }) => {
+const SEMC2 = ({ navigation }) => {
   return (
     <View>
       <ImageBackground
         source={require('../../img/reg.png')}
         style={styles.rect}
       >
-        <Text style={styles.txt}>Branch</Text>
+        <Text style={styles.txt}>SEMC2</Text>
       </ImageBackground>
        
       <TouchableOpacity onPress={() => navigation.navigate('Year')}>
@@ -50,7 +50,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC2
 
 const styles = {
   container: {
@@ -70,6 +70,17 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 15
+  },
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
+    top: -20,
+    borderRadius: 100,
+    left:-15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 20
   },
   txt: {
     justifyContent: 'center',

@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, ImageBackground, TouchableOpacity,ScrollView  }
 import React from 'react'
 // import { ScrollView } from 'react-native-gesture-handler'
 
-const Branch = ({ navigation }) => {
+const SEMC5 = ({ navigation }) => {
   return (
     <ScrollView>
     <View>
@@ -58,7 +58,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC5
 
 const styles = {
   container: {
@@ -78,6 +78,17 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 15
+  },
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
+    top: -20,
+    borderRadius: 100,
+    left:-15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 20
   },
   txt: {
     justifyContent: 'center',

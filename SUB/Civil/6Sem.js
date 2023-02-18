@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity,Scoral } from 'react-native'
 import React from 'react'
 
-const Branch = ({ navigation }) => {
+const SEMC6 = ({ navigation }) => {
   return (
     <View>
       <ImageBackground
@@ -60,7 +60,7 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC6
 
 const styles = {
   container: {
@@ -119,5 +119,17 @@ const styles = {
 
 
 
-  }
+  },
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
+    top: -20,
+    borderRadius: 100,
+    left:-15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 20
+  },
+
 }

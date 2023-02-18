@@ -1,76 +1,48 @@
 import React, { Component } from 'react';
 import { View, Text, ImageBackground, TouchableOpacity } from 'react-native';
 //rnfe
-import { LinearGradient } from 'expo-linear-gradient';
-// import { useNavigation } from '@react-navigation/native';
-// const navigation = useNavigation();
 
-//   const handleButtonPress = () => {
-//     navigation.navigate('Scheme.js');
-//   };
+import { widthPercentageToDP as wp,heightPercentageToDP as hp, } from 'react-native-responsive-screen';
 
 
-<<<<<<< HEAD
+
 const HomePage = ({navigation}) => {
     return (
       
      
          
         <View style={styles.container}>
-        
+        <View style={styles.inner}>
+        {/* <View style={{ height: 20 }} /> */}
            <View style={styles.rectangleBox}>
            <ImageBackground
           source={require('../img/Logo3.png')}
           style={styles.Log}
-        >
-          
-        </ImageBackground>
-           
-=======
-
-const HomePage = ({ navigation }) => {
-  return (
-
-    <View style={styles.container}>
-      <LinearGradient
-        colors={['#4200FF', '#343CFC']}
-        start={[10, -110]}
-        end={[1, -100]}
-        style={styles.rectangleBox}
+        >      
+         </ImageBackground>  
+         <View style={styles.rect}>
+          <View >
+          <ImageBackground
+        source={require('../img/br.png')}
+        style={styles.Log2}
+         ></ImageBackground>
 
 
-      >
-        <View>
+          </View>
+        
 
-        </View>S
-
-
-
-
->>>>>>> 8736e644864a0bba1e0dab2781f664ccf37114a8
-        <ImageBackground
+         </View>
+        {/* <ImageBackground
           source={require('../img/reg.png')}
           style={styles.rect}
-        >
-<<<<<<< HEAD
-          
-        </ImageBackground>
-        
+        > */}
+        {/* </ImageBackground> */}
            </View >
-         
-       
-         
-        
-       
-      
-        
-     
-       
-     
-     
-
+           <View style={{ height: 20 }} />
+           {/* <View style={{ height: 20 }} /> */}
+           
       <TouchableOpacity onPress={()=> navigation.navigate('Br')} style={styles.touch}  >
-     
+              
                 <Text style={styles.but}>Notes
                 </Text>
                 <View style={{ height: 20 }} />
@@ -90,40 +62,9 @@ const HomePage = ({ navigation }) => {
                 
             </TouchableOpacity> 
       </View>
-      
+      </View>
     );
   
-=======
-          <Text style={styles.txt}>Svadhyay</Text>
-        </ImageBackground>
-
-      </LinearGradient>
-
-
-      <TouchableOpacity onPress={() => navigation.navigate('Br')} style={styles.touch}  >
-
-        <Text style={styles.but}>Notes
-        </Text>
-
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Br')} style={styles.touch}>
-
-        <Text style={styles.but}>Roadmaps
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Br')} style={styles.touch}>
-        <View style={{ height: 20 }} />
-        <Text style={styles.but}>Question paper
-        </Text>
-        <View style={{ height: 20 }} />
-
-
-      </TouchableOpacity>
-    </View>
-
-  );
-
->>>>>>> 8736e644864a0bba1e0dab2781f664ccf37114a8
 }
 const ElevatedView = ({ children, style }) => (
   <View style={[{ elevation:100, shadowColor: 'white' }, style]}>
@@ -136,10 +77,17 @@ const styles = {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor:'#fff'
-    
+    backgroundColor:'#fff',
+   width:'100%',
   },
-<<<<<<< HEAD
+  inner:{
+     backgroundColor:'#fff',
+     alignItems: 'center',
+     justifyContent:'center',
+     width:wp(200),
+    height:hp(100),
+
+  },
   touch:{
     flex:0,
     alignItems: 'center',
@@ -147,71 +95,41 @@ const styles = {
     top:-100,
   },
   rectangleBox: {
-    // width: 420,
-    // height: 650,
+   
    top:-250,
-    // borderRadius: 100,
-    // backgroundColor: myColor,
-    // // backgroundColor: rgba(66, 0, 255, 1)
-    // // ,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    // elevation: 15
-    width:420,
-    height:650,
+    width:wp(100),
+    height:hp(85),
     backgroundColor: '#fbb13c',
     borderRadius:100,
     elevation:20,
-=======
-  touch: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    top: -110
   },
-  rectangleBox: {
-    width: 420,
-    height: 650,
-    top: -250,
-    borderRadius: 100,
-    backgroundColor: myColor,
-    // backgroundColor: rgba(66, 0, 255, 1)
-    // ,
-    alignItems: 'center',
-    justifyContent: 'center',
-    elevation: 15
->>>>>>> 8736e644864a0bba1e0dab2781f664ccf37114a8
+  Log2:{
+    alignItems :'center',
+   
+   
+    top:20,
+   
+    // borderRadius:400,
+    width:198,
+    height:151,
+   
   },
   head1: {
     fontSize: 30,
     color: '#E74C3C',
-<<<<<<< HEAD
     fontWeight:'700',
 },
   rect : {
-    width:342,
-    height: 250,
+    
     alignItems :'center',
    
-    // backgroundimage:'',
-    top: 450,
+    backgroundColor:'#ffff',
+    top: 500,
     right:-40,
-    borderRadius:100,
-    
-=======
-    fontWeight: '700',
-  },
-  rect: {
-    width: 330,
-    height: 250,
-    alignItems: 'center',
-    backgroundColor: 'white',
-    // backgroundimage:'',
-    top: 280,
-    Left: 30,
-    borderRadius: 100,
-
->>>>>>> 8736e644864a0bba1e0dab2781f664ccf37114a8
+    borderRadius:400,
+    width:wp(80),
+    height:hp(29),
+    elevation:90
   },
   txt: {
     justifyContent: 'center',
@@ -229,7 +147,7 @@ const styles = {
 
   },
   but: {
-    // top:-80,
+    
     fontSize: 16,
     width: 320,
     height: 50,
@@ -245,26 +163,15 @@ const styles = {
     borderRadius: 50,
     padding: 12,
     elevation: 10,
-
-
-
-
   },
   Log:{
-    
-    width:300,
-    height: 55,
     alignItems :'center',
-    // backgroundColor:'white',
-    // backgroundimage:'',
     top: 400,
-    right:-60,
+    left:(80),
     borderRadius:100,
-    ElevatedView
-    
-   
-    
-   
+    ElevatedView,
+    width:250,
+    height:45,
   }
 };
 

@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { Text, View, ImageBackground, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Branch = ({ navigation }) => {
+const SEMC1 = ({ navigation }) => {
   return (
     <View>
       <ImageBackground
-        source={require('../../img/reg.png')}
-        style={styles.rect}
+        source={require('../../img/br.png')}
+        style={styles.rect2}
       >
         <Text style={styles.txt}>Subject</Text>
       </ImageBackground>
@@ -50,13 +50,24 @@ const Branch = ({ navigation }) => {
   )
 }
 
-export default Branch
+export default SEMC1
 
 const styles = {
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  rect2: {
+    width:450,
+    height:370,
+    backgroundColor: 'white',
+    top: -20,
+    borderRadius: 100,
+    left:-15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 20
   },
   rect: {
     width: 420,
